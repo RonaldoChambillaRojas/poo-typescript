@@ -1,3 +1,4 @@
+import axios = require("axios");
 
 (async() => {
     
@@ -12,17 +13,12 @@
     }
 
     function getProducts(){
-        const promise = fetch('https://api.escuelajs.co/api/v1/products');
+        const promise = axios.get('https://api.escuelajs.co/api/v1/products');
         return promise;
     }
 
     async function getProductsAsync(){
-        const rta = await fetch('https://api.escuelajs.co/api/v1/products',{
-            method: 'get',
-            headers: {
-                "Content-Type": "application/json"
-            }
-        });
+        const rta = await axios.get('https://api.escuelajs.co/api/v1/products');
         return rta;
     }
 
@@ -32,8 +28,8 @@
 
     console.log('------'.repeat(10))
 
-    const products1 = await getProductsAsync();
-    console.log(products1);
+    const products = await getProducts();
+    console.log(products.data);
 
     console.log('------'.repeat(10))
 
