@@ -8,7 +8,7 @@ export interface Product {
     description: string;
     category:    categoryModel.Category;
     images:      string[];
-    creationAt:  Date;
+    createdAt:  Date;
     updatedAt:   Date;
 }
 
