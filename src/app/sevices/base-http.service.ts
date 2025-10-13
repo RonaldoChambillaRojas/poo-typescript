@@ -9,7 +9,7 @@ export class BaseHttpService<TypeClass> {
     // data: TypeClass[] = [];
 
     constructor(
-        private url: string,
+        protected url: string,
     ){}
     async getAll(): Promise<TypeClass[]>{
         const {data} = await axios.get<TypeClass[]>(this.url);
