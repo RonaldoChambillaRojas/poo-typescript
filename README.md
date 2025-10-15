@@ -36,4 +36,3 @@ El contenido se organiza para demostrar la implementación práctica de los sigu
 
 El valor central de este repositorio reside en la **combinación de ambas disciplinas**. Se busca crear código bien estructurado (gracias a POO) que maneje las operaciones de red, bases de datos o archivos de manera eficiente y no bloqueante (gracias al Asincronismo).
 
-Este es un recurso esencial para cualquier desarrollador que aspire a construir arquitecturas de software empresarial con TypeScript.
