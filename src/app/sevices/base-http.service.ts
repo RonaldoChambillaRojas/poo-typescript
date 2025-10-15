@@ -27,6 +27,7 @@ export class BaseHttpService<TypeClass> {
 
 // const service2 = new BaseHttpService<Category>();
 // service2.getAll()
+// ! ESTA FUNCION SE LLAMA ASI MISMA, LA USAMOS PARA PODER USAR FUNCIONES ASINCRIONAS
 (async() => {
     const url1 = 'https://api.escuelajs.co/api/v1/products'
     const productService = new BaseHttpService<Product>(url1);
