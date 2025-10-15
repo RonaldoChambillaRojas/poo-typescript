@@ -15,7 +15,7 @@ interface Driver {
 // }
 
 
-
+// Aqui implementamo la estructura de la interfas Driver en la clase PostgresDriver
 class PostgresDriver implements Driver{
     constructor(
         public database: string,
